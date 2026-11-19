@@ -2,10 +2,10 @@
 #include <cstddef>
 
 // The three stages are separate link targets with the same course API.
-void* smalloc(std::size_t size);
-void* scalloc(std::size_t count, std::size_t size);
-void sfree(void* pointer);
-void* srealloc(void* pointer, std::size_t size);
+void *smalloc(std::size_t size);
+void *scalloc(std::size_t count, std::size_t size);
+void sfree(void *pointer);
+void *srealloc(void *pointer, std::size_t size);
 
 std::size_t _num_free_blocks();
 std::size_t _num_free_bytes();
